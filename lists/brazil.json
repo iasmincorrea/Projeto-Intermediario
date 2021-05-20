@@ -1,0 +1,191 @@
+[
+    {
+        "federativeunit": "São Paulo",
+        "recovered": "2,548,139",
+        "cases": "6,371",
+        "death": "209",
+        "timestamp": 1621543840536
+    },
+    {
+        "federativeunit": "Minas Gerais",
+        "recovered": "1,189,604",
+        "cases": "6,358",
+        "death": "156",
+        "timestamp": 1621543840537
+    },
+    {
+        "federativeunit": "Rio Grande do Sul",
+        "recovered": "868,426",
+        "cases": "8,501",
+        "death": "217",
+        "timestamp": 1621543840537
+    },
+    {
+        "federativeunit": "Paraná",
+        "recovered": "861,640",
+        "cases": "8,290",
+        "death": "194",
+        "timestamp": 1621543840537
+    },
+    {
+        "federativeunit": "Bahia",
+        "recovered": "821,336",
+        "cases": "5,821",
+        "death": "119",
+        "timestamp": 1621543840538
+    },
+    {
+        "federativeunit": "Santa Catarina",
+        "recovered": "824,290",
+        "cases": "12,585",
+        "death": "191",
+        "timestamp": 1621543840538
+    },
+    {
+        "federativeunit": "Rio de Janeiro",
+        "recovered": "636,994",
+        "cases": "4,388",
+        "death": "260",
+        "timestamp": 1621543840538
+    },
+    {
+        "federativeunit": "Ceará",
+        "recovered": "568,394",
+        "cases": "7,366",
+        "death": "191",
+        "timestamp": 1621543840538
+    },
+    {
+        "federativeunit": "Goiás",
+        "recovered": "494,322",
+        "cases": "8,067",
+        "death": "218",
+        "timestamp": 1621543840539
+    },
+    {
+        "federativeunit": "Pará",
+        "recovered": "425,264",
+        "cases": "5,580",
+        "death": "152",
+        "timestamp": 1621543840539
+    },
+    {
+        "federativeunit": "Espírito Santo",
+        "recovered": "394,266",
+        "cases": "10,769",
+        "death": "233",
+        "timestamp": 1621543840539
+    },
+    {
+        "federativeunit": "Pernambuco",
+        "recovered": "356,071",
+        "cases": "4,245",
+        "death": "146",
+        "timestamp": 1621543840539
+    },
+    {
+        "federativeunit": "Federal District",
+        "recovered": "351,058",
+        "cases": "12,394",
+        "death": "253",
+        "timestamp": 1621543840539
+    },
+    {
+        "federativeunit": "Amazonas",
+        "recovered": "345,825",
+        "cases": "9,092",
+        "death": "309",
+        "timestamp": 1621543840540
+    },
+    {
+        "federativeunit": "Mato Grosso",
+        "recovered": "319,570",
+        "cases": "10,660",
+        "death": "285",
+        "timestamp": 1621543840540
+    },
+    {
+        "federativeunit": "Paraíba",
+        "recovered": "265,322",
+        "cases": "7,217",
+        "death": "167",
+        "timestamp": 1621543840540
+    },
+    {
+        "federativeunit": "Maranhão",
+        "recovered": "243,247",
+        "cases": "3,780",
+        "death": "102",
+        "timestamp": 1621543840541
+    },
+    {
+        "federativeunit": "Mato Grosso do Sul",
+        "recovered": "223,755",
+        "cases": "9,078",
+        "death": "208",
+        "timestamp": 1621543840541
+    },
+    {
+        "federativeunit": "Piauí",
+        "recovered": "213,249",
+        "cases": "7,388",
+        "death": "156",
+        "timestamp": 1621543840541
+    },
+    {
+        "federativeunit": "Rio Grande do Norte",
+        "recovered": "201,383",
+        "cases": "6,295",
+        "death": "154",
+        "timestamp": 1621543840541
+    },
+    {
+        "federativeunit": "Rondônia",
+        "recovered": "192,889",
+        "cases": "11,699",
+        "death": "283",
+        "timestamp": 1621543840545
+    },
+    {
+        "federativeunit": "Sergipe",
+        "recovered": "180,288",
+        "cases": "8,741",
+        "death": "184",
+        "timestamp": 1621543840545
+    },
+    {
+        "federativeunit": "Alagoas",
+        "recovered": "156,932",
+        "cases": "5,104",
+        "death": "123",
+        "timestamp": 1621543840545
+    },
+    {
+        "federativeunit": "Tocantins",
+        "recovered": "145,854",
+        "cases": "10,213",
+        "death": "161",
+        "timestamp": 1621543840545
+    },
+    {
+        "federativeunit": "Amapá",
+        "recovered": "99,788",
+        "cases": "13,157",
+        "death": "191",
+        "timestamp": 1621543840545
+    },
+    {
+        "federativeunit": "Roraima",
+        "recovered": "90,420",
+        "cases": "18,317",
+        "death": "285",
+        "timestamp": 1621543840546
+    },
+    {
+        "federativeunit": "Acre",
+        "recovered": "72,041",
+        "cases": "9,317",
+        "death": "182",
+        "timestamp": 1621543840546
+    }
+]
