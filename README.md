@@ -29,8 +29,12 @@ Routes > covid.js:
     //Importa os componentes do pacote express para dentro de uma variável chamada express
     const express = require('express')
     
+    //
     const request = require('request')
+    
+    //
     const cheerio = require('cheerio')
+    
     const fs = require('fs')
     const router = express.Router()
 
@@ -39,7 +43,11 @@ Routes > covid.js:
 
         request(url, function(error, response, html) {
             if (!error) {
+            
+                // Carregamento do html no cheerio com a função load
                 var $ = cheerio.load(html)
+                
+                
                 var list = []
 
                 $("#data-table").find("tbody tr").each(function(i) {
