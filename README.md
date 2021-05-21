@@ -121,26 +121,45 @@ URL: https://www.atlasbig.com/en-us/coronavirus
 Obs: Estatísticas dos casos de corona vírus no mundo, listando todos os países com o número de casos total, de hoje, ontem e de dois dias atrás. Além de o número de mortes total, de hoje, ontem e de dois dias atrás + a data e horário do processamento da requisição.
 
 [{
+  
   "country": "United States of America",
+  
   "casestotal": "32,087,980",
+  
   "casestoday": "7,373",
+  
   "casesyesterday": "55,925",
+  
   "casestwoago": "51,509",
+  
   "deathtotal": "571,865",
+  
   "deathtoday": "71",
+  
   "deathyesterday": "967",
+  
   "deathtwoago": "655",
+  
   "timestamp": 1621543837126
+
 }]
 
 Rota: /covid/brazil
+
 URL: https://www.atlasbig.com/en-us/coronavirus-brazil
+
 Obs: Estatísticas dos casos de corona vírus no Brasil, listando todos os estados com o número total de recuperados, o número de casos em uma população de 100K, número de mortes em uma população de 100K + a data e horário do processamento da requisição.
 
 [{
+
   "federativeunit": "São Paulo",
+  
   "recovered": "2,548,139",
+  
   "cases": "6,371",
+  
   "death": "209",
+  
   "timestamp": 1621543840536
+  
 }]
