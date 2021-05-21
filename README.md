@@ -115,7 +115,9 @@ Routes > covid.js:
 Estrutura dos dados retornados:
 
 Rota: /covid/world
+
 URL: https://www.atlasbig.com/en-us/coronavirus
+
 Obs: Estatísticas dos casos de corona vírus no mundo, listando todos os países com o número de casos total, de hoje, ontem e de dois dias atrás. Além de o número de mortes total, de hoje, ontem e de dois dias atrás + a data e horário do processamento da requisição.
 
 [{
