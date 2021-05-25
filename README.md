@@ -29,28 +29,44 @@ Routes > covid.js:
     //Importa os componentes do pacote express para dentro de uma variável chamada express
     const express = require('express')
     
-    //
+    //Sintaxe padrão para requisições do tipo GET
     const request = require('request')
     
-    //
+    //Para acessar o DOM externo e extrair os dados
     const cheerio = require('cheerio')
     
+    //Para usar o módulo fs (File System)
     const fs = require('fs')
+    
+    //Inicializar uma instância middleware router
     const router = express.Router()
 
+    //Configurações da rota covid/world
     router.get('/world', function(req, res) {
+    
+        //Url que será realizado o webscraping
         var url = 'https://www.atlasbig.com/en-us/coronavirus'
 
+        //O método request recebe os parâmetros url e callback
+        //No parâmetro url colocamos a página para realizar o webscraping
+        //No callback declaramos três novos parâmetros: error, response e o html
         request(url, function(error, response, html) {
+        
+            //Certificar que não possui erros
             if (!error) {
             
                 // Carregamento do html no cheerio com a função load
                 var $ = cheerio.load(html)
                 
-                
+                //Objeto para armazenar a tabela
                 var list = []
 
+                //Definindo o id da tabela para o webscraping
+                //Dentro da tabela irá encontrar no tbody todos os 'tr'
                 $("#data-table").find("tbody tr").each(function(i) {
+                    
+                    //Armazenando o dado na variável
+                    //Encontra o td conforme sua posição definida pelo eq(), retornando texto e sem espaço em branco
                     var country = $(this).find("td").eq(1).text().trim()
                     var casestotal = $(this).find("td").eq(2).text().trim()
                     var casestoday = $(this).find("td").eq(3).text().trim()
@@ -62,6 +78,7 @@ Routes > covid.js:
                     var deathtwoago = $(this).find("td").eq(9).text().trim()
                     var timestamp = new Date().getTime();
 
+                    //Inserindo os dados no objeto
                     list.push({
                         country,
                         casestotal,
@@ -77,29 +94,49 @@ Routes > covid.js:
                 })
             }
 
+            //Gerar o arquivo world.json na pasta lists com todos os objetos
             fs.writeFile('../lists/world.json', JSON.stringify(list, null, 4), function(err) {
                 console.log('O arquivo JSON se encontra em lists/world.json!')
             })
 
+            //Enviar resposta
             res.send(list)
         })
     })
 
+    //Configurações da rota covid/brazil
     router.get('/brazil', function(req, res) {
+    
+        //Url que será realizado o webscraping
         var url = 'https://www.atlasbig.com/en-us/coronavirus-brazil'
 
+        //O método request recebe os parâmetros url e callback
+        //No parâmetro url colocamos a página para realizar o webscraping
+        //No callback declaramos três novos parâmetros: error, response e o html
         request(url, function(error, response, html) {
+        
+            //Certificar que não possui erros
             if (!error) {
+            
+                // Carregamento do html no cheerio com a função load
                 var $ = cheerio.load(html)
+                
+                //Objeto para armazenar a tabela
                 var list = []
 
+                //Definindo o id da tabela para o webscraping
+                //Dentro da tabela irá encontrar no tbody todos os 'tr'
                 $("#data-table").find("tbody tr").each(function(i) {
+                
+                    //Armazenando o dado na variável
+                    //Encontra o td conforme sua posição definida pelo eq(), retornando texto e sem espaço em branco
                     var federativeunit = $(this).find("td").eq(0).text().trim()
                     var recovered = $(this).find("td").eq(9).text().trim()
                     var cases = $(this).find("td").eq(10).text().trim()
                     var death = $(this).find("td").eq(11).text().trim()
                     var timestamp = new Date().getTime();
 
+                    //Inserindo os dados no objeto
                     list.push({
                         federativeunit,
                         recovered,
@@ -110,14 +147,17 @@ Routes > covid.js:
                 })
             }
 
+            //Gerar o arquivo world.json na pasta lists com todos os objetos
             fs.writeFile('../lists/brazil.json', JSON.stringify(list, null, 4), function(err) {
                 console.log('O arquivo JSON se encontra em lists/brazil.json!')
             })
 
+            //Enviar resposta
             res.send(list)
         })
     })
 
+    //Este comando faz com que o javascript identifique quais parâmetros desejamos importar do arquivo covid.js
     module.exports = router
 
 Estrutura dos dados retornados:
