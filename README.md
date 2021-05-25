@@ -147,7 +147,7 @@ Routes > covid.js:
                 })
             }
 
-            //Gerar o arquivo world.json na pasta lists com todos os objetos
+            //Gerar o arquivo brazil.json na pasta lists com todos os objetos
             fs.writeFile('../lists/brazil.json', JSON.stringify(list, null, 4), function(err) {
                 console.log('O arquivo JSON se encontra em lists/brazil.json!')
             })
